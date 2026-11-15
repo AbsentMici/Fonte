@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fonte</title>
+<meta name="theme-color" content="#111412">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Fonte">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main id="view"></main>
+
+<div id="rest" hidden>
+  <span class="rest-l">Repos</span>
+  <b id="rest-t">0:00</b>
+  <button data-a="rest-adj" data-d="-15">−15 s</button>
+  <button data-a="rest-adj" data-d="15">+15 s</button>
+  <button data-a="rest-skip">Passer</button>
+</div>
+
+<nav id="tabs">
+  <button data-a="tab" data-tab="home">
+    <svg viewBox="0 0 24 24"><path d="M3 10v4M6 7v10M18 7v10M21 10v4M6 12h12"/></svg>Séance
+  </button>
+  <button data-a="tab" data-tab="hist">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Historique
+  </button>
+  <button data-a="tab" data-tab="lib">
+    <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Exercices
+  </button>
+  <button data-a="tab" data-tab="set">
+    <svg viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>Réglages
+  </button>
+</nav>
+
+<div id="sheet" hidden></div>
+<div id="toast" hidden></div>
+<input type="file" id="imp" accept="application/json,.json" hidden>
+<script src="app.js"></script>
+</body>
+</html>
